@@ -1,0 +1,182 @@
+@charset"utf-8";
+
+/* Eric Meyer reset.css */
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,output,section,summary,
+time,mark,audio,video,select,input{
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	vertical-align: middle;
+	font-family: 'notosanskr-regular', sans-serif;
+	color: #222222;
+}
+ol,ul{list-style: none;}
+blockquote,q{quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after{content: ""; content: none;}
+table{border-collapse: collapse; border-spacing: 0; width: 100%; table-layout: fixed;}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display: block;}
+
+/* shs reset.css*/
+html{width: 100%; height: 100%; overflow-x: hidden; overflow-y: scroll;}
+body{width: 100%; height: 100%; background-color: #fff;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+hr{display: none;}
+legend,caption{display: block; position: absolute; top: -1000em; left: -1000em; text-indent: -1000em; overflow: hidden; }
+button,label{
+	cursor: pointer;
+	font-family: 'notosanskr-medium', sans-serif;
+	padding: 0;
+	outline: none;
+	border: 0;
+	background: transparent;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	transition: all 0.4s;
+}
+input[type=text],
+input[type=tel],
+input[type=password]{
+	font-size: 14px;
+	color: #222222;
+	box-sizing: border-box;
+	border: 0;
+	outline: none;
+	padding: 4px 16px;
+	font-family: 'notosanskr-regular', sans-serif;
+	-webkit-appearance: none;
+}
+input.text_input::placeholder {color:#565656;}
+input.text_input::-webkit-input-placeholder {color: #565656;} /* edge */
+input.text_input::-ms-input-placeholder {color: #565656;} /* ie */
+input.text_input:-ms-input-placeholder { /* Internet Explorer 10 */
+  color: #565656;
+}
+input.text_input:-moz-input-placeholder,
+input.text_input:-o-input-placeholder {color:#565656;}
+
+
+/* Removes the clear button from date inputs */
+input[type=date]::-webkit-clear-button {display: none;}
+
+/* Removes the spin button */
+input[type=date]::-webkit-inner-spin-button {display: none;}
+
+/* Always display the drop down caret */
+input[type=date]::-webkit-calendar-picker-indicator {color: #2c3e50;}
+
+/* A few custom styles for date inputs */
+input[type=date] {
+    -webkit-appearance: none;
+	height :42px;
+    color :#222222;
+    font-family: 'notosanskr-regular', sans-serif;
+    font-size: 0.8em;
+    border: 0;
+    background :#ecf0f1;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+input[type=date]:focus {color: #95a5a6; box-shadow:none; -webkit-box-shadow:none; -moz-box-shadow:none;}
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=password]:focus{outline: none;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin :0;}
+input[type=radio],
+input[type=checkbox] {margin: 0; padding: 0;}
+input::placeholder {font-size: 13px; color: #565656; font-family: 'notosanskr-regular', sans-serif;}
+textarea{border: 1px solid #ccc; line-height: 1.5; font-size: 12px; color: #666; resize: none; border-radius: 0;}
+textarea:focus{border: 1px solid #666;}
+select{-webkit-appearance: none;}
+/* ie 9 */
+select::-ms-expand {display: none;}
+.blind{display: block; overflow: hidden; position: absolute; top: -1000em; left: 0;}
+/* Noto Sans KR Regular */
+@font-face {
+	font-family:'notosanskr-regular';
+	src: url('../font/notosanskr_regular.eot');
+	src: url('../font/notosanskr-regular.otf');
+	src: url('../font/notosanskr-regular.eot?#iefix') format('embedded-opentype'),
+	url('../font/notosanskr_regular.woff') format('woff');
+}
+/* Noto Sans KR Medium */
+@font-face {
+	font-family:'notosanskr-medium';
+	src: url('../font/notosanskr_medium.eot');
+	src: url('../font/notosanskr_medium.otf');
+	src: url('../font/notosanskr_medium.eot?#iefix') format('embedded-opentype'),
+	url('../font/notosanskr_medium.woff') format('woff');
+}
+/* Noto Sans KR Bold */
+@font-face {
+	font-family:'notosanskr-bold';
+	src: url('../font/notosanskr_bold.eot');
+	src: url('../font/notosanskr_bold.otf');
+	src: url('../font/notosanskr_bold.eot?#iefix') format('embedded-opentype'),
+	url('../font/notosanskr_bold.woff') format('woff');
+}
+
+
+
+
+
+/*layout*/
+
+
+.inner{position:relative; box-sizing: border-box; border: 16px solid transparent;}
+.header{position:relative;}
+.content{position:relative; box-sizing: border-box; border: 16px solid transparent;}
+.footer{width: 100%;}
+
+
+
+/*.header*/
+.header .inner{width: 100%; height: 24px;}
+.header .inner .box{display: flex; justify-content: space-between; align-items: center;}
+
+.header .inner .box .logo{display: block; width: 74px; height: 22px;}
+.header .inner .box .logo .logo_btn{display: block; width: 74px; height: 22px; background:url(../image/drawable-xhdpi/logo_sollago.png) 0 0 no-repeat; background-size: contain;}
+.header .inner .box .menu{display: block; width: 24px; height: 24px;}
+.header .inner .box .menu .menu_btn{display: block;  width: 24px; height: 24px; background:url(../image/drawable-xhdpi/ico_menu.png) 0 0 no-repeat; background-size: contain;}
+
+
+
+
+
+
+
+/*.footer*/
+.footer .inner{box-sizing: border-box; border: 16px solid transparent;}
+.footer .inner .top{display: flex; justify-content: space-between; align-items: center; }
+.footer .inner .top .title{width: 50%; font-size: 12px; line-height: 36px; font-weight: 700;}
+.footer .inner .top .line{display: block; width: 50%; border-bottom: 1px solid #000;}
+
+
+.footer .inner .bottom{display: flex; justify-content: space-around; align-items: center;}
+.footer .inner .bottom .weather{display: block; width: 48px; height: 48px; background:url(../image/drawable-xhdpi/weather02.png) 0 0 no-repeat; background-size: contain;}
+
+
+.footer .inner .bottom .text{display: flex; flex-direction: column; align-items: center;}
+
+.footer .inner .bottom .text .text_top{font-size: 10px; text-align: center;}
+.footer .inner .bottom .text .text_bottom{display: flex; align-items: center; justify-content : center; text-align: center; line-height: 36px; text-align: center; font-weight: 700;}
+.footer .inner .bottom .text .text_bottom .bottom1{font-size: 16px;}
+.footer .inner .bottom .text .text_bottom .bottom2{font-size: 8px;}
+
+
