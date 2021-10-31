@@ -1,0 +1,99 @@
+
+.wrapper {
+    position:relative; margin: 0 auto; width: 100%;
+}
+
+/* 헤더 */
+header { margin: 0 auto; width: 100%; max-width: 1130px; height: 60vh; }
+header .headerWrap { width: 100%; height: 410px; }
+header .headerWrap .headerInner { width: 100%; height: 410px; }
+
+header .headerWrap .headerInner .logo { width:100%; height: 410px; }
+header .headerWrap .headerInner .logo h1 { margin:0 auto; padding-top: 152px; width: 100%; text-align: center; }
+header .headerWrap .headerInner .logo h1 p.result{  height: 106px;
+    display: inline-block; font-size:120px; text-align: center; line-height: 126px; border-right: 1px solid #000; padding-right: 2px; box-sizing: border-box; animation: cursor 0.4s infinite; font-weight: 900; }
+
+    @keyframes cursor{ 
+        0%{border-right: 2px solid #fff} 
+        50%{border-right: 2px solid #000} 
+        100%{border-right: 2px solid #fff} 
+   }
+  
+  /* colours */
+  .color-violet {
+    background-color: #7A4EAB;
+  }
+  .color-black {
+    background-color: #000000;
+  }
+  .color-indigo {
+    background-color: #4332CF;
+  }
+  .color-blue {
+    background-color: #2F8FED;
+  }
+  .color-green {
+    background-color: #4DCF42;
+  }
+  .color-yellow {
+    background-color: #FAEB33;
+  }
+  .color-orange {
+    background-color: #F19031;
+  }
+  .color-red {
+    background-color: #F2293A;
+  }
+
+header .headerWrap .headerInner .logo .scrollIcon { text-align: center; margin-top: 250px; }
+header .headerWrap .headerInner .logo .scrollIcon img { width:50px; height:50px;}
+
+
+
+/* 컨텐츠 */
+.contWrap {
+    margin: 0 auto; width: 100%; max-width: 1130px;
+}
+.contWrap .contInner { width: 100%; }
+.contWrap .contInner .intro { padding-top: 30px; width: 100%; }
+.contWrap .contInner .intro .message p { color: #fff; font-size: 60px; line-height: 88px; font-weight: 900; text-align: center; word-break: keep-all; }
+
+
+
+.contWrap .contInner .intro .introduce { margin-top: 300px; width:100%; }
+.contWrap .contInner .intro .introduce>p { font-size: 70px; font-weight: 900; text-align: center; color: #fff; }
+
+.contWrap .contInner .intro .introduce .profile { padding-top: 100px; display: flex; flex-direction: row; justify-content: space-around; width: 100%; }
+.contWrap .contInner .intro .introduce .profile .profileImg { width:500px; }
+.contWrap .contInner .intro .introduce .profile .profileImg>img { width: 500px; height: 687px; }
+
+.contWrap .contInner .intro .introduce .profile .profileTxt { padding-top: 180px; }
+.contWrap .contInner .intro .introduce .profile .profileTxt>p { font-size: 30px; line-height: 42px; font-weight: 600; text-align: center; color: #fff; }
+.contWrap .contInner .intro .introduce .profile .profileTxt>p:first-child { font-size: 60px; line-height: 82px; font-weight: 800; }
+.contWrap .contInner .intro .introduce .profile .profileTxt>p:nth-child(2) { font-size: 30px; line-height: 42px; }
+
+.contWrap .contInner .intro .introduce .profile .profileTxt .snsIcon { margin-top: 60px; width: 100%; display: flex; flex-direction: row; justify-content: space-around; }
+.contWrap .contInner .intro .introduce .profile .profileTxt .snsIcon>a { width: 50px; }
+.contWrap .contInner .intro .introduce .profile .profileTxt .snsIcon>a>img { width: 50px; height: 50px; }
+.contWrap .contInner .intro .introduce .profile .profileTxt .snsIcon>a>span { width: 100%; font-size: 25px; line-height: 50px; color: #fff; }
+
+
+.contWrap .contInner .contBox { margin-top: 300px; width: 100%; }
+.contWrap .contInner .contBox p { color: #fff; font-size: 60px; line-height: 88px; font-weight: 900; text-align: center; word-break: keep-all; }
+
+.contWrap .contInner .contBox .quiz { margin-top: 100px; width:100%; border-radius: 10px; background: #fff; }
+.contWrap .contInner .contBox .quiz>p { width:100%; font-size: 50px; line-height: 66px;  color: #000; }
+
+.contWrap .contInner .contBox .rightAnswer { margin-top: 500px; }
+.contWrap .contInner .contBox .rightAnswer>p:nth-child(2) { padding-top: 50px;font-size: 90px; text-decoration: underline; }
+.contWrap .contInner .contBox .rightAnswer>p:nth-child(3) { padding-top: 20px; }
+
+.contWrap .contInner .contBox>.message { margin-top: 300px; margin-bottom: 150px; }
+.contWrap .contInner .contBox>.message p:nth-child(2) { margin-top: 200px; font-size: 80px; }
+
+
+
+/* 푸터 */
+.footerWrap { width: 100%; height: 80px; background-color: #ffffff; }
+.footerWrap .footerInner .footerLogo { margin-right: 20px; font-size: 32px; line-height: 80px; text-align: right; font-weight: 900; color:#000000; }
+
